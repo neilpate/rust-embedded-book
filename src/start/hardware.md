@@ -155,22 +155,22 @@ source [find target/stm32f3x.cfg]
 
 ``` text
 $ openocd
-Open On-Chip Debugger 0.10.0
+xPack OpenOCD x86_64 Open On-Chip Debugger 0.11.0+dev (2022-03-25-17:32)
 Licensed under GNU GPL v2
 For bug reports, read
         http://openocd.org/doc/doxygen/bugs.html
 Info : auto-selecting first available session transport "hla_swd". To override use 'transport select <transport>'.
-adapter speed: 1000 kHz
-adapter_nsrst_delay: 100
 Info : The selected transport took over low-level target control. The results might differ compared to plain JTAG/SWD
-none separate
-Info : Unable to match requested speed 1000 kHz, using 950 kHz
-Info : Unable to match requested speed 1000 kHz, using 950 kHz
-Info : clock speed 950 kHz
-Info : STLINK v2 JTAG v27 API v2 SWIM v15 VID 0x0483 PID 0x374B
-Info : using stlink api v2
-Info : Target voltage: 2.913879
-Info : stm32f3x.cpu: hardware has 6 breakpoints, 4 watchpoints
+Info : DEPRECATED target event trace-config; use TPIU events {pre,post}-{enable,disable}
+Info : Listening on port 6666 for tcl connections
+Info : Listening on port 4444 for telnet connections
+Info : clock speed 1000 kHz
+Info : STLINK V2J37M26 (API v2) VID:PID 0483:374B
+Info : Target voltage: 2.898167
+Info : [stm32f3x.cpu] Cortex-M4 r0p1 processor detected
+Info : [stm32f3x.cpu] target has 6 breakpoints, 4 watchpoints
+Info : starting gdb server for stm32f3x.cpu on 3333
+Info : Listening on port 3333 for gdb connections
 ```
 
 On another terminal run GDB, also from the root of the template.
